@@ -30,7 +30,7 @@ interpolate_squares <- function(seed = 1, n = 25, ease_function = "") {
     df1 <- data.frame(x = c(0, 1, 1, 0), y = c(0, 0, 1, 1), xend = c(1, 1, 0, 0), yend = c(0, 1, 1, 0))
     df2 <- data.frame(x = runif(4), y = runif(4), xend = runif(4), yend = runif(4))
     df <- list(df1, df2)
-    tf <- tweenr::tween_states(df, tweenlength = 1, statelength = 0, ease = ease, nframes = 1000)
+    tf <- tweenr::tween_states(df, tweenlength = 1, statelength = 0, ease = ease, nframes = 100)
     tf
   }
   
